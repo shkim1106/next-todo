@@ -36,5 +36,5 @@ export async function POST(request: NextRequest) {
         data: addedTodo
     } 
 
-    return Response.json(response, { status: 201 });
+    return NextResponse.json(response, { status: 201 });
   }
