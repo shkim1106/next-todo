@@ -14,6 +14,8 @@ import { Input } from "@nextui-org/input";
 
 import { link as linkStyles } from "@nextui-org/theme";
 
+import { FaApple } from "react-icons/fa"
+
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
@@ -39,7 +41,7 @@ export const Navbar = () => {
 			}}
 			endContent={
 				<Kbd className="hidden lg:inline-block" keys={["command"]}>
-					K
+					S
 				</Kbd>
 			}
 			labelPlacement="outside"
@@ -56,8 +58,8 @@ export const Navbar = () => {
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Logo />
-						<p className="font-bold text-inherit">ACME</p>
+						<FaApple />
+						<p className="font-bold text-inherit">SuHyuk's</p>
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -130,7 +132,7 @@ export const Navbar = () => {
 										? "danger"
 										: "foreground"
 								}
-								href="#"
+								href={item.href}
 								size="lg"
 							>
 								{item.label}
