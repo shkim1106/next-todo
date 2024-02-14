@@ -48,7 +48,7 @@ export default function RootLayout({
 							{children}
 						</main>
 						<footer className="w-full flex items-center justify-center py-3">
-							<p>SuHyuk's Web site</p>
+							<p>made by SuHyuk</p>
 						</footer>
 					</div>
 				</Providers>
