@@ -1,6 +1,9 @@
+import { FaPhone } from "react-icons/fa";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
+	icon: FaPhone ,
 	name: "SuHyuk's Website",
 	description: "This is the first website by SuHyuk.",
 	navItems: [
