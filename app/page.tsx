@@ -24,8 +24,7 @@ export default function Home() {
 			<div className="flex gap-3">
 				<Link
 					isExternal
-					href="todos"
-					size="lg"
+					href="/todos"
 					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
 				>
 					Todos
