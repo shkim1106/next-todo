@@ -3,7 +3,7 @@ import TodosTable from "@/components/todos-table"
 
 async function fetchTodosApiCall() {
 	console.log("fetchTodosApiCall called")
-	const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000"; // 기본값 추가
+	const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL //|| "http://localhost:3000"; // 기본값 추가
 
 	const res = await fetch(`${API_BASE_URL}/api/todos/`, {cache: "no-store"})
 
