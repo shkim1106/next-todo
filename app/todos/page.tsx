@@ -5,7 +5,7 @@ async function fetchTodosApiCall() {
 	console.log("fetchTodosApiCall called")
 	const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL //|| "http://localhost:3000"; // 기본값 추가
 
-	const res = await fetch(`${API_BASE_URL}/api/todos/`, {cache: "no-store"})
+	const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/todos/`, {cache: "no-store"})
 
 	const contentTypeCheck = res.headers.get('Content-Type')
 	
